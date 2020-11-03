@@ -1,0 +1,10 @@
+name: ServerModeration
+version: ${project.version}
+main: com.github.carthax08.servermoderation.Main
+authors: [CarThax08]
+description: Adds moderation features to Minecraft Servers on top of what Spigot already offers.
+website: github.com/CarThax08
+commands:
+  tempban:
+    description: Temporarily Bans a Player
+    usage: /tempban [player] [time] [s,min,h,d] [reason]
