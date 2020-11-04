@@ -9,7 +9,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Main extends JavaPlugin {
 
-    String version = "1.0-alpha";
+    String version = "1.1-alpha";
 
     @Override
     public void onEnable() {

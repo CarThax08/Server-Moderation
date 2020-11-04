@@ -32,21 +32,25 @@ public class TempBan implements CommandExecutor {
             if(args[2].equalsIgnoreCase("s")) {
                 BanPlayer.banPlayer(message, args[0], sender.getName(), Integer.parseInt(args[1]) * 1000);
                 sender.sendMessage("Player successfully banned.");
+                sendConsoleMessage(sender,args[1] + " seconds", args[0]);
                 return true;
             }
             if(args[2].equalsIgnoreCase("m")){
                 BanPlayer.banPlayer(message, args[0], sender.getName(), Integer.parseInt(args[1]) * 60 * 1000);
                 sender.sendMessage("Player successfully banned.");
+                sendConsoleMessage(sender,args[1] + " minutes", args[0]);
                 return true;
             }
             if(args[2].equalsIgnoreCase("h")){
                 BanPlayer.banPlayer(message, args[0], sender.getName(), Integer.parseInt(args[1]) * 60 * 60 * 1000);
                 sender.sendMessage("Player successfully banned.");
+                sendConsoleMessage(sender,args[1] + " hours", args[0]);
                 return true;
             }
             if(args[2].equalsIgnoreCase("d")){
                 BanPlayer.banPlayer(message, args[0], sender.getName(), Integer.parseInt(args[1]) * 24 * 60 * 60 * 1000);
                 sender.sendMessage("Player successfully banned.");
+                sendConsoleMessage(sender,args[1] + " days", args[0]);
                 return true;
             }
         }
@@ -54,5 +58,9 @@ public class TempBan implements CommandExecutor {
 
 
         return false;
+    }
+
+    private void sendConsoleMessage(CommandSender sender, String s, String playerBanned) {
+        System.out.println(sender.getName() + " has temp-banned player " + playerBanned + " for " + s);
     }
 }

@@ -6,7 +6,7 @@
 
     <groupId>com.github.carthax08</groupId>
     <artifactId>ServerModeration</artifactId>
-    <version>v1.0-alpha</version>
+    <version>v1.1-alpha</version>
     <packaging>jar</packaging>
 
     <name>ServerModeration</name>

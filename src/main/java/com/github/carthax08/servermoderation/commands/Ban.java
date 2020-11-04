@@ -29,6 +29,7 @@ public class Ban implements CommandExecutor {
             }
             BanPlayer.banPlayer(message, args[0], sender.getName());
             sender.sendMessage("Player successfully banned.");
+            System.out.println(sender.getName() + " has banned player " + args[0]);
             return true;
 
         }
