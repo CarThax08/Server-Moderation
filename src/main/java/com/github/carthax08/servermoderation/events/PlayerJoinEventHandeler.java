@@ -18,5 +18,6 @@ public class PlayerJoinEventHandeler implements Listener {
         if(main.getConfig().getBoolean("settings.sendMessageOnJoin")){
             event.getPlayer().sendMessage("This server uses ServerModeration by CarThax08. /n If you are the owner of this server and want to get rid of this message go to the config.");
         }
+
     }
 }

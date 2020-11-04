@@ -17,3 +17,6 @@ commands:
   unbanip:
     description: Unbans an IP
     usage: /unbanip [ip]
+  banip:
+    description: Bans and IP
+    usage: /banip [ip/player]
