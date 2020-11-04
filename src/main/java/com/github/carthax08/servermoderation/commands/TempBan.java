@@ -34,7 +34,7 @@ public class TempBan implements CommandExecutor {
                 sender.sendMessage("Player successfully banned.");
                 return true;
             }
-            if(args[2].equalsIgnoreCase("min")){
+            if(args[2].equalsIgnoreCase("m")){
                 BanPlayer.banPlayer(message, args[0], sender.getName(), Integer.parseInt(args[1]) * 60 * 1000);
                 sender.sendMessage("Player successfully banned.");
                 return true;

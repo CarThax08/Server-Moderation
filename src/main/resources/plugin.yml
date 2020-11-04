@@ -8,3 +8,12 @@ commands:
   tempban:
     description: Temporarily Bans a Player
     usage: /tempban [player] [time] [s,min,h,d] [reason]
+  ban:
+    description: Bans a player permanantley
+    usage: /ban [player] [reason]
+  unban:
+    descripiton: Unbans a player
+    usage: /unban [player]
+  unbanip:
+    description: Unbans an IP
+    usage: /unbanip [ip]
